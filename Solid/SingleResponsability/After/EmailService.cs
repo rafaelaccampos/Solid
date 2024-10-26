@@ -1,10 +1,9 @@
-﻿namespace Solid.SingleResponsability.After
+﻿namespace Solid.SingleResponsability.After;
+
+public class EmailService
 {
-    public class EmailService
+    public void SendOrderConfirmation(Order order)
     {
-        public void SendOrderConfirmation(Order order)
-        {
-            // Lógica para enviar confirmação por e-mail
-        }
+        // Lógica para enviar confirmação por e-mail
     }
 }

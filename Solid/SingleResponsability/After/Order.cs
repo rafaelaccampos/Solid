@@ -1,14 +1,13 @@
-﻿namespace Solid.SingleResponsability.After
+﻿namespace Solid.SingleResponsability.After;
+
+public class Order
 {
-    public class Order
+    private readonly IList<string> _items = new List<string>();
+
+    public void AddItem(string item) { _items.Add(item); }
+
+    public void CalculateTotal()
     {
-        private readonly IList<string> _items = new List<string>();
-
-        public void AddItem(string item) { _items.Add(item); }
-
-        public void CalculateTotal()
-        {
-            // Lógica para calcular o total
-        }
+        // Lógica para calcular o total
     }
 }

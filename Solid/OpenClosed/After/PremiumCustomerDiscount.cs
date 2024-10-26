@@ -1,10 +1,9 @@
-﻿namespace Solid.OpenClosed.After
+﻿namespace Solid.OpenClosed.After;
+
+public class PremiumCustomerDiscount : IDiscount
 {
-    public class PremiumCustomerDiscount : IDiscount
+    public decimal ApplyDiscount(decimal amount)
     {
-        public decimal ApplyDiscount(decimal amount)
-        {
-            return amount * 0.2m;
-        }
+        return amount * 0.2m;
     }
 }

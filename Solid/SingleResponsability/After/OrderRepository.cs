@@ -1,10 +1,9 @@
-﻿namespace Solid.SingleResponsability.After
+﻿namespace Solid.SingleResponsability.After;
+
+public class OrderRepository
 {
-    public class OrderRepository
+    public void Save(Order order)
     {
-        public void Save(Order order)
-        {
-            // Lógica para salvar o pedido no banco de dados
-        }
+        // Lógica para salvar o pedido no banco de dados
     }
 }

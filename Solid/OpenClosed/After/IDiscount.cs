@@ -1,7 +1,6 @@
-﻿namespace Solid.OpenClosed.After
+﻿namespace Solid.OpenClosed.After;
+
+public interface IDiscount
 {
-    public interface IDiscount
-    {
-        decimal ApplyDiscount(decimal amount);
-    }
+    decimal ApplyDiscount(decimal amount);
 }
