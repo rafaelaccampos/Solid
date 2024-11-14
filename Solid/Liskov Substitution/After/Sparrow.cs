@@ -1,6 +1,4 @@
-﻿using Solid.Liskov_Substitution.Before;
-
-namespace Solid.Liskov_Substitution.After;
+﻿namespace Solid.Liskov_Substitution.After;
 
 public class Sparrow : Bird, IFlyable
 {
