@@ -4,12 +4,12 @@ public class FaxMachine : IMultifunctionDevice
 {
     public string Print()
     {
-        return "Fax can't print!";
+        throw new NotSupportedException("Fax can't print");
     }
 
     public string Scan()
     {
-        return "Fax can't scan!";
+        throw new NotSupportedException("Fax can't scan!");
     }
 
     public string Fax()

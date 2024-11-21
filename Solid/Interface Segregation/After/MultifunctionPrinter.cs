@@ -1,6 +1,7 @@
 ﻿namespace Solid.Interface_Segregation.After;
 
-public class MultifunctionPrinter : IPrint, IScan, IFax
+public interface IMultifunctionPrinter : IPrint, IScan, IFax;
+public class MultifunctionPrinter : IMultifunctionPrinter
 {
     public string Fax()
     {

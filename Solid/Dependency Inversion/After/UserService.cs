@@ -1,17 +1,11 @@
-﻿namespace Solid.Dependency_Inversion.After
+﻿namespace Solid.Dependency_Inversion.After;
+
+public class UserService(IEmailService emailService)
 {
-    public class UserService
+    private readonly IEmailService _emailService = emailService;
+
+    public void RegisterUser()
     {
-        private readonly EmailService _emailService;
-
-        public UserService(EmailService emailService)
-        {
-            _emailService = emailService; // Injeta a dependência através do construtor
-        }
-
-        public void RegisterUser()
-        {
-            _emailService.SendEmail("Welcome!");
-        }
+        _emailService.SendEmail("Welcome!");
     }
 }

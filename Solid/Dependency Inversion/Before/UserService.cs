@@ -2,12 +2,7 @@
 
 public class UserService
 {
-    private readonly EmailService _emailService;
-
-    public UserService()
-    {
-        _emailService = new EmailService();
-    }
+    private readonly EmailService _emailService = new();
 
     public void RegisterUser()
     {

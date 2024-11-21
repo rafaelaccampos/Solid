@@ -2,7 +2,7 @@
 
 public class Order
 {
-    private readonly IList<string> _items = new List<string>();
+    private readonly IList<string> _items = [];
 
     public void AddItem(string item) { _items.Add(item); }
 
